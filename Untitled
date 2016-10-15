@@ -1,0 +1,425 @@
+alexperaltac9io:~/workspace $ git init
+Initialized empty Git repository in /home/ubuntu/workspace/.git/
+alexperaltac9io:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+alexperaltac9io:~/workspace (master) $ git commit -m "primer commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present
+alexperaltac9io:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+alexperaltac9io:~/workspace (master) $ git remote add https://github.com/AlexGith2016/blockAlex.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+alexperaltac9io:~/workspace (master) $ git init
+Reinitialized existing Git repository in /home/ubuntu/workspace/.git/
+alexperaltac9io:~/workspace (master) $ git commit -m "primer commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/blockAlex.git
+alexperaltac9io:~/workspace (master) $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/AlexGith2016/blockAlex.git'
+alexperaltac9io:~/workspace (master) $ git init
+Reinitialized existing Git repository in /home/ubuntu/workspace/.git/
+alexperaltac9io:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+alexperaltac9io:~/workspace (master) $ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/primera_practica.git
+fatal: remote origin already exists.
+alexperaltac9io:~/workspace (master) $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/AlexGith2016/blockAlex.git'
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/primera_practica.git
+fatal: remote origin already exists.
+alexperaltac9io:~/workspace (master) $ git remove
+git: 'remove' is not a git command. See 'git --help'.
+
+Did you mean this?
+        remote
+alexperaltac9io:~/workspace (master) $ git remote
+origin
+alexperaltac9io:~/workspace (master) $ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+alexperaltac9io:~/workspace (master) $ git remote set-url https://github.com/AlexGith2016/blockAlex.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --push https://github.com/AlexGith2016/blockAlex.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/blockAlex.git
+fatal: remote origin already exists.
+alexperaltac9io:~/workspace (master) $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/AlexGith2016/blockAlex.git'
+alexperaltac9io:~/workspace (master) $ git remote set-url --delete https://github.com/AlexGith2016/blockAlex.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --delete primer commit https://github.com/AlexGith2016/blockAlex.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --push https://github.com/AlexGith2016/blockAlex.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/blockAlex.git
+fatal: remote origin already exists.
+alexperaltac9io:~/workspace (master) $ git remote origin origin https://github.com/AlexGith2016/blockAlex.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+alexperaltac9io:~/workspace (master) $ git remote delete origin https://github.com/AlexGith2016/blockAlex.git
+error: Unknown subcommand: delete
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/blockAlex.git
+fatal: remote origin already exists.
+alexperaltac9io:~/workspace (master) $ git remote remove origin
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/blockAlex.git
+alexperaltac9io:~/workspace (master) $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/AlexGith2016/blockAlex.git'
+alexperaltac9io:~/workspace (master) $ git remote -v
+origin  https://github.com/AlexGith2016/blockAlex.git (fetch)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+alexperaltac9io:~/workspace (master) $ git remote --delete origin https://github.com/AlexGith2016/blockAlex.git
+error: unknown option `delete'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --delete origin https://github.com/AlexGith2016/blockAlex.git
+fatal: Will not delete all non-push URLs
+alexperaltac9io:~/workspace (master) $ git remote -v
+origin  https://github.com/AlexGith2016/blockAlex.git (fetch)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+alexperaltac9io:~/workspace (master) $ git remote set-url --add origin https://github.com/AlexGith2016/blockAlex.git
+alexperaltac9io:~/workspace (master) $ git remote -v
+origin  https://github.com/AlexGith2016/blockAlex.git (fetch)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+alexperaltac9io:~/workspace (master) $ git remote set-url --delete origin https://github.com/AlexGith2016/blockAlex.git
+fatal: Will not delete all non-push URLs
+alexperaltac9io:~/workspace (master) $ git init
+Reinitialized existing Git repository in /home/ubuntu/workspace/.git/
+alexperaltac9io:~/workspace (master) $ git commit -m "primer commit blog"
+On branch master
+
+Initial commit
+
+Untracked files:
+        README.md
+        close.svg
+        hello-world.html
+        index.html
+        page2.html
+        page3.html
+        styles.css
+        styles2.css
+
+nothing added to commit but untracked files present
+alexperaltac9io:~/workspace (master) $ git add --all
+alexperaltac9io:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+        new file:   close.svg
+        new file:   hello-world.html
+        new file:   index.html
+        new file:   page2.html
+        new file:   page3.html
+        new file:   styles.css
+        new file:   styles2.css
+
+alexperaltac9io:~/workspace (master) $ git commit -m "agregando archivos blog"
+[master (root-commit) f9ab669] agregando archivos blog
+ 8 files changed, 452 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 close.svg
+ create mode 100644 hello-world.html
+ create mode 100644 index.html
+ create mode 100644 page2.html
+ create mode 100644 page3.html
+ create mode 100644 styles.css
+ create mode 100644 styles2.css
+alexperaltac9io:~/workspace (master) $ git remote add origin https://github.com/AlexGith2016/blogAlex.git
+fatal: remote origin already exists.
+alexperaltac9io:~/workspace (master) $ git remote -v
+origin  https://github.com/AlexGith2016/blockAlex.git (fetch)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+alexperaltac9io:~/workspace (master) $ git remote
+origin
+alexperaltac9io:~/workspace (master) $ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --delete origin https://github.com/AlexGith2016/blockAlex.git
+fatal: Will not delete all non-push URLs
+alexperaltac9io:~/workspace (master) $ git ermote add url --add https://github.com/AlexGith2016/blogAlex.git
+git: 'ermote' is not a git command. See 'git --help'.
+
+Did you mean this?
+        remote
+alexperaltac9io:~/workspace (master) $ git remote add url --add https://github.com/AlexGith2016/blogAlex.git
+error: unknown option `add'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+alexperaltac9io:~/workspace (master) $ git remote add-url --add https://github.com/AlexGith2016/blogAlex.git
+error: Unknown subcommand: add-url
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --add https://github.com/AlexGith2016/blogAlex.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+alexperaltac9io:~/workspace (master) $ git remote set-url --add origin https://github.com/AlexGith2016/blogAlex.git
+alexperaltac9io:~/workspace (master) $ git remote -v
+origin  https://github.com/AlexGith2016/blockAlex.git (fetch)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+origin  https://github.com/AlexGith2016/blockAlex.git (push)
+origin  https://github.com/AlexGith2016/blogAlex.git (push)
+alexperaltac9io:~/workspace (master) $ git remote set-url --delete origin  https://github.com/AlexGith2016/blockAlex.git
+alexperaltac9io:~/workspace (master) $ git remote -v
+origin  https://github.com/AlexGith2016/blogAlex.git (fetch)
+origin  https://github.com/AlexGith2016/blogAlex.git (push)
+alexperaltac9io:~/workspace (master) $ git push -u origin master
+Username for 'https://github.com': AlexGith2016
+Password for 'https://AlexGith2016@github.com':
+Counting objects: 10, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 5.66 KiB | 0 bytes/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/AlexGith2016/blogAlex.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
